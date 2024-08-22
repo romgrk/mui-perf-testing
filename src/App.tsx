@@ -11,23 +11,17 @@ const darkTheme = createTheme({
   },
 });
 
-
-
-// import Component from './demo-employees'
-// import Component from './demo-virtualization'
-import Component from './debug'
-// import Component from './material-ui'
-
-
+import Component from './material'
+// import Component from './mantine'
 
 
 export default function App() {
   return (
-    <div style={{ colorScheme: 'dark', padding: '2em' }}>
-      <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkTheme}>
+      <div style={{ colorScheme: 'dark', padding: '2em' }}>
         <CssBaseline />
         <Component />
-      </ThemeProvider>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
